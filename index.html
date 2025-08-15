@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -15,6 +15,7 @@
     <nav id="navbar">
         <div class="container">
             <div class="nav-container">
+                <div class="logo">RS</div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -42,16 +43,17 @@
                             Viev My work
                         </a>
 
-                        <a href="contact" class="btn btn-primary">
+                        <a href="contact" class="btn btn-secondary">
                             <i class="fas fa-envelope"></i>
                             Get in touch
                         </a>
                     </div>
                 </div>
+                <div class="hero-image">
+                    <img src="https://www.pngmart.com/files/11/Rickrolling-PNG-Photos.png" alt="Rick Astley">
+                </div>
             </div>
-            <div class="hero-image">
-                <img src="https://www.pngmart.com/files/11/Rickrolling-PNG-Photos.png" alt="Rick Astley">
-            </div>
+
         </div>
     </section>
 
@@ -368,12 +370,25 @@
                                 <label for="message">Message</label>
                                 <textarea id="message" name="message" placeholder="Your Message here..." required></textarea>
                             </div>
+
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <p>&copy;2024 Rick Astley. All rights reserved. Built with passion and lots of coffee ☕</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
