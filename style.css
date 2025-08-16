@@ -113,7 +113,7 @@ nav.scrolled {
 
 .hero-text p {
     font-size: 1.1rem;
-    color: #64743b;
+    color: #64748b;
     margin-bottom: 2rem;
     opacity: 0;
     animation: fadeInUp 1s ease forwards;
@@ -189,4 +189,114 @@ nav.scrolled {
     background-color: #2563eb;
     color: white;
     transform: translateY(-2px);
+}
+
+section {
+    padding: 5rem 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #1e293b;
+}
+
+
+/* About */
+
+.about {
+    background-color: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30 px rgba(0,0,0,0.1);
+}
+
+.about-text h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2563eb;
+}
+
+.about-text p{
+    color: #64748b;
+    margin-bottom: 1.5rem;
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat-item{
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f8fafc;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover{
+    transform: translateY(-5px);
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+.stat-label {
+    color: #64748b;
+    font-weight: 500;
+}
+
+/* Qulification */
+
+.qualications {
+    background-color: #f8fafc;
+}
+
+.qual-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.qual-card{
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.qual-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.qual-icon {
+    font-size: 2.5rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+}
+
+.qual-icon h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0,5rem;
+    color: #1e293b;
 }
