@@ -80,3 +80,23 @@ window.addEventListener('load', function() {
     }
 })
 
+window.addEventListener('scroll', function(){
+    const scrolled = window.pageYOffset;
+    const hero = document.querySelector('.hero');
+    const rate = scrolled * -0.5;
+
+    if(hero) {
+        hero.style.transform = `translateY(${rate}px)`;
+    }
+});
+
+document.querySelectorAll('.project-card').forEach(card => {
+    card.addEventListener('mouseenter', function() {
+        this.style.transform = 'translateY(-10px) scale(1.02)'
+    });
+
+    card.addEventListener('mouseleave', function() {
+        this.style.transform = 'translateY(0px) scale(1)'
+    });
+})
+
